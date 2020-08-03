@@ -1,0 +1,73 @@
+#body{
+        background-color: white;
+        color: blue;
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.container {
+    background-color: khaki;
+    padding: 3rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+  }
+    
+.h3{
+        margin: 0;
+        text-align: center;
+}
+
+.form {
+
+    justify-content: center;
+    align-items: center;
+}
+
+.number-input {
+    width: 2rem;
+  }
+
+.rnge{
+      display: flex;
+     align-items: center;
+  }
+  
+
+  .btn {
+    grid-column: span 2;
+    background-color: blanchedalmond;
+    border: 8px;
+    border-color: blue;
+    color: red;
+    padding: .5rem 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 1rem;
+    
+  }
+  
+  .btn:hover {
+    background-color: red;
+    color: white;
+    border: 30px;
+  }
+
+  .pass-gen {
+    background-color: white;
+    color: black;
+    padding: 1rem;
+    border: 1px solid black;
+    height: 2rem;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+    border-radius: .5rem;
+  }
