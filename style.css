@@ -1,5 +1,5 @@
 body {
-    background-color:white;
+    background-color: rgb(17, 221, 136);
     margin: 0;
     color: white;
     min-height: 100vh;
@@ -10,7 +10,7 @@ body {
   }
   
   .container {
-    background-color: black;
+    background-color: #006699;
     padding: 3rem;
     border-radius: 1rem;
     border: 2px solid black;
@@ -18,7 +18,9 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-  }
+    border-radius: 10px;
+    font-family: "Montserrat";
+}
   
   .form {
     display: grid;
@@ -30,8 +32,8 @@ body {
   }
   
   .title {
+    margin: 0;
     text-align: center;
-    padding: 10px;
   }
   
   label {
@@ -70,8 +72,10 @@ body {
     font-weight: bold;
     cursor: pointer;
     border-radius: 1rem;
+
   }
   
   .btn:hover {
     background-color: #FFFFFF33;
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   }
