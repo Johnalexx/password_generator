@@ -4,38 +4,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta author="Adegbola Johnbeulah /ANCHOR-HUB">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="style1.css">
   <title>Password Generator</title>
 </head>
-<body id="body">
+<body>
   <div class="container">
+    <h1 class="title">Password Generator</h1><br>
+    <form id="passgenform" class="form">
+      <label for="noC">Number Of Characters</label>
+      <div class="character-container">
+        <input type="range" min="1" max="50" value="10" id="charRange">
+        <input class="number-input" type="number" min="1" max="50" value="10" id="charNumber">
+      </div>
 
-            <h3 class="h3">Password Generator</h3>
+      <label for="ucase">Upper case</label>
+      <input type="checkbox" id="ucase">
+      
+      <label for="lcase">Lower Case</label>
+      <input type="checkbox" id="lcase">
 
-    <form id="genform" class="form">
+      <label for="num">Numbers</label>
+      <input type="checkbox" id="num">
 
-            <label for="char"></label>
-            <input type="checkbox" id="char">Include Characters</input><br>
+      <label for="special">Special Characters</label>
+      <input type="checkbox" id="special">
 
-            <label for="str"></label>
-            <input type="checkbox" id="str">Include Strings</input><br>
-
-            <label for="num"></label>
-            <input type="checkbox" id="num">Include Numbers</input></br>
-
-            <div class="rnge">
-            <input type="range" min="6" max="16">
-            <input class="number-input" type="number" id="nmb" min="6" max="16" placeholder="6">
-            </div>
-
-            <button type="" class="btn">Generate Password</button></br>
-
-            <label for="result"></label>
-            <input class="pass-gen" placeholder="Password Generated" id="password"></input>
+      <button type="submit" class="btn">Generate Password</button>
     </form>
-
+    <h3 class="password-display" id="passwordDisplay">password</h3>
   </div>
 </body>
 </html>
