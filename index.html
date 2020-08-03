@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta author="Adegbola John">
-  <script src="script.js" defer></script>
+  <script src="randomize.js" defer></script>
   <link rel="stylesheet" href="style.css">
   <title>Password Generator</title>
 </head>
 <body>
+     <!--The Container for all the elements-->
   <div class="container">
     <h1 class="title">Password Generator</h1><br>
  
+      <!--Form-->
     <form id="passwordgenform" class="form">
       <label for="character-length">Length Of Characters</label>
       <div class="character-container">
@@ -32,10 +33,18 @@
       <label for="special">Special Character</label>
       <input type="checkbox" id="special">
 
-      <button type="submit" class="btn">Generate Password</button>
+      <button onclick="myFunction()" type="submit" class="btn">Generate Password</button>
     </form>
+
+    <!--Displays the Password-->
     <h3 class="password-display" id="display-password">Generated Password</h3>
   </div>
 
+
+<script src="randomize.js" defer></script>
+
 </body>
+
+
+<script src="script.js" ></script>
 </html>
