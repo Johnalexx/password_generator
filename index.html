@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta author="Adegbola John">
   <script src="script.js" defer></script>
   <link rel="stylesheet" href="style.css">
   <title>Password Generator</title>
@@ -13,7 +14,7 @@
     <h1 class="title">Password Generator</h1><br>
  
     <form id="passwordgenform" class="form">
-      <label for="character-number">Number Of Characters</label>
+      <label for="character-length">Length Of Characters</label>
       <div class="character-container">
         <input type="range" min="6" max="16" value="10" id="rnge">
         <input class="number-input" type="number" min="6" max="16" value="6" id="num-input">
@@ -29,11 +30,12 @@
       <input type="checkbox" id="num">
 
       <label for="special">Special Character</label>
-      <input type="checkbox" id="includeSymbols">
+      <input type="checkbox" id="special">
 
       <button type="submit" class="btn">Generate Password</button>
     </form>
-    <h3 class="password-display" id="display-password">password</h3>
+    <h3 class="password-display" id="display-password">Generated Password</h3>
   </div>
+
 </body>
 </html>
