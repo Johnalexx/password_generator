@@ -4,7 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <script src="randomize.js" defer></script>
+
+
+  <script src="script.js" defer></script>
+
   <link rel="stylesheet" href="style.css">
   <title>Password Generator</title>
 </head>
@@ -16,35 +19,28 @@
       <!--Form-->
     <form id="passwordgenform" class="form">
       <label for="character-length">Length Of Characters</label>
-      <div class="character-container">
-        <input type="range" min="6" max="16" value="10" id="rnge">
-        <input class="number-input" type="number" min="6" max="16" value="6" id="num-input">
+      <div class="sliders">
+        <input id="range" min="6" max="16" value="10" type="range">
+        <input id="slider" type="number" min="6" max="16" value="6" class="number-input">
       </div>
 
       <label for="ucase">Upper case</label>
-      <input type="checkbox" id="ucase">
+      <input id="ucase" type="checkbox">
 
       <label for="lcase">Lower Case</label>
-      <input type="checkbox" id="lcase">
-
-      <label for="num">Number</label>
-      <input type="checkbox" id="num">
+      <input id="lcase" type="checkbox">
 
       <label for="special">Special Character</label>
-      <input type="checkbox" id="special">
+      <input id="special" type="checkbox">
 
-      <button onclick="myFunction()" type="submit" class="btn">Generate Password</button>
+      <label for="num">Number</label>
+      <input id="num" type="checkbox">
+
+      <button type="submit" class="btn">Generate Password</button>
     </form>
 
     <!--Displays the Password-->
-    <h3 class="password-display" id="display-password">Generated Password</h3>
+    <h3 id="p" class="password-display">Generated Password</h3>
   </div>
-
-
-<script src="randomize.js" defer></script>
-
 </body>
-
-
-<script src="script.js" ></script>
 </html>
